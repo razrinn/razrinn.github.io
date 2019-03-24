@@ -40,16 +40,23 @@ a:hover {
 }
 
 /* selected link */
-a:active {
+a:active,
+a.icon:active {
     color: #d0e1f9;
 }
 
-a.a-home:link {
+a.a-home,
+a.icon {
     color: #ffffff;
 }
 
-a.a-home:visited {
+a.a-home:visited,
+a.icon:visited {
     color: #ffffff;
+}
+
+a.icon:hover {
+    color: #4d648d;
 }
 
 
@@ -96,6 +103,10 @@ p.scroll-to-content:hover {
 
 .color-blue {
     color: #4d648d;
+}
+
+.color-white {
+    color: #ffffff;
 }
 
 .container {
@@ -222,6 +233,14 @@ p.scroll-to-content:hover {
     text-transform: none;
 }
 
+.svg-icon {
+    height: 1em;
+    margin-top: -4px;
+    pointer-events: none;
+    vertical-align: middle;
+    width: 1em;
+}
+
 
 /* footer */
 section {
@@ -250,59 +269,27 @@ section#contact {
     color: #ffffff;
 }
 
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
 
-#footer ul.social li {
-    padding: 3px 0;
-}
 
-#footer ul.social li a i {
+ul.social li a i {
     margin-right: 5px;
     font-size: 25px;
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
     transition: .5s all ease;
+
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }
 
-#footer ul.social li:hover a i {
+ul.social li:hover a i {
     font-size: 30px;
     margin-top: -10px;
 }
 
-#footer ul.social li a,
-#footer ul.quick-links li a {
-    color: #ffffff;
-}
 
-#footer ul.social li a:hover {
-    color: #eeeeee;
-}
-
-#footer ul.quick-links li {
-    padding: 3px 0;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
-}
-
-#footer ul.quick-links li:hover {
-    padding: 3px 0;
-    margin-left: 5px;
-    font-weight: 700;
-}
-
-#footer ul.quick-links li a i {
-    margin-right: 5px;
-}
-
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
 
 @media (max-width:767px) {
     #footer h5 {
@@ -311,10 +298,4 @@ section#contact {
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
-}
-
-#navbar {
-    transition: top 0.3s;
-    background-color: rgb(52, 58, 64);
-    opacity: 0.975 !important;
 }
