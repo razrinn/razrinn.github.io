@@ -194,7 +194,7 @@ p.scroll-to-content:hover {
 
 .img-contact {
     width: 100%;
-    height: 65vh;
+    height: 60vh;
 }
 
 .img-cover {
@@ -225,7 +225,11 @@ section {
 }
 
 section#footer {
-    padding: 20px;
+    padding: 5px;
+}
+
+section#contact {
+    padding-bottom: 0px;
 }
 
 
