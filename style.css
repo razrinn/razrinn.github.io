@@ -130,6 +130,31 @@ p.scroll-to-content:hover {
     background-color: rgba(30, 31, 38, 0.9);
 }
 
+@-webkit-keyframes arrow-jump {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -0-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+#arrow {
+    -webkit-animation: arrow-jump 1s infinite;
+    /* Safari 4+ */
+    -moz-animation: arrow-jump 1s infinite;
+    /* Fx 5+ */
+    -o-animation: arrow-jump 1s infinite;
+    /* Opera 12+ */
+    animation: arrow-jump 1s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
 .b-b-white {
     border-bottom: 1px solid #ffffff;
 }
@@ -202,6 +227,7 @@ section {
 section#footer {
     padding: 20px;
 }
+
 
 #footer {
     padding-top: 3rem;
