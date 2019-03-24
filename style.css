@@ -66,6 +66,10 @@ p.scroll-to-content:hover {
     font-size: 3rem;
 }
 
+.list-icons .list-inline-item i {
+    color: #d0e1f9;
+}
+
 .list-icons .list-inline-item i:hover {
     color: #4d648d;
 }
