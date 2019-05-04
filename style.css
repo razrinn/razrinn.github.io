@@ -1,305 +1,84 @@
-/* #ffffff • #d0e1f9 • #4d648d • #283655 • #1e1f26 */
-
-body {}
-
-nav {
-    min-height: 5rem;
-}
-
-body {
-    margin: auto 0;
+/* All */
+*,
+html {
     overflow-x: hidden;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    color: #1e1f26;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Karla', sans-serif;
-    font-weight: 300;
-    /* text-transform: uppercase; */
+/* Navbar */
+nav {
+    min-height: 8vh;
 }
 
-a:link {
-    color: #283655;
+/* Image */
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* visited link */
-a:visited {
-    color: #283655;
+.img-full {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
-
-/* mouse over link */
-a:hover {
-    color: #4d648d;
-}
-
-/* selected link */
-a:active,
-a.icon:active {
-    color: #d0e1f9;
-}
-
-a.a-home,
-a.icon {
-    color: #ffffff;
-}
-
-a.a-home:visited,
-a.icon:visited {
-    color: #ffffff;
-}
-
-a.icon:hover {
-    color: #4d648d;
-}
-
-
-p {
-    /* text-align: center; */
-    padding-top: 1rem;
-}
-
-p.scroll-to-content:hover {
-    background-color: #d0e1f9;
-}
-
-.list-icons {
-    font-size: 3rem;
-}
-
-.list-icons .list-inline-item i {
-    color: #d0e1f9;
-}
-
-.list-icons .list-inline-item i:hover {
-    color: #4d648d;
-}
-
-.bg-dark {
-    background-color: #1e1f26;
-}
-
-.bg-dark-blue {
-    background-color: #283655;
-}
-
-.bg-blue {
-    background-color: #4d648d;
-}
-
-.bg-light-blue {
-    background-color: #d0e1f9;
-}
-
-.bg-white {
-    background-color: #ffffff;
-}
-
-.color-blue {
-    color: #4d648d;
-}
-
-.color-white {
-    color: #ffffff;
-}
-
-.container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 
 .parallax {
     /* The image used */
-    background-image: url('img/cover.jpeg');
+    background-image: url("img/cover.jpeg");
 
-    /* Full height */
-    height: 100%;
-    min-height: 92vh;
+    /* Set a specific height */
+    min-height: 100vh;
 
-    position: relative;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    overflow-y: hidden;
+}
+
+/* Text styling */
+.bb-white{
+    border-bottom: 2px solid white;  
+}
+
+u{
+    width: 2px;
+}
+
+a.icon{
+    color: white;
+}
+
+a.icon:hover{
+    color: #2bbbad;
+}
+
+/* Button */
+.btn{
+    border-radius: 25px;
 }
 
 
-.parallax-content {
-    color: #ffffff;
-    position: absolute;
-    /* 2 */
-    top: 50%;
-    /* 3 */
-    /* left: 50%; */
-    /* margin-right: -50%; */
-    /* margin-left: 1rem; */
-    transform: translate(0%, -50%);
-    background-color: rgba(30, 31, 38, 0.7);
-}
-
-@-webkit-keyframes arrow-jump {
-    0% {
-        opacity: 0;
+/* Misc */
+/* Untuk mobile */
+@media only screen and (max-width:768px){
+    .pt-20{
+        padding-top:40vh;
+    }
+    .display-3{
+        font-size:4rem;
     }
 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(10px);
-        -moz-transform: translateY(10px);
-        -0-transform: translateY(10px);
-        transform: translateY(10px);
+    .landing-title{
+        font-size:1.2rem;
+
     }
 }
 
-#arrow {
-    -webkit-animation: arrow-jump 1s infinite;
-    /* Safari 4+ */
-    -moz-animation: arrow-jump 1s infinite;
-    /* Fx 5+ */
-    -o-animation: arrow-jump 1s infinite;
-    /* Opera 12+ */
-    animation: arrow-jump 1s infinite;
-    /* IE 10+, Fx 29+ */
-}
-
-.b-b-white {
-    border-bottom: 1px solid #ffffff;
-}
-
-.b-l-dark-blue {
-    border-left: 3px solid #283655;
-    padding-left: 3rem;
-}
-
-.img-profile {
-    width: 356px;
-    height: 356px;
-    object-fit: cover;
-    object-position: 0 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img-education {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img-educ-cover {
-    widows: 100%;
-    height: 612px;
-    object-fit: cover;
-}
-
-.text-education {
-    height: 100px;
-}
-
-.img-contact {
-    width: 100%;
-    height: 60vh;
-}
-
-.img-cover {
-    width: 100vw;
-    height: 55vh;
-    object-fit: cover;
-}
-
-.contact-content {
-    font-weight: bolder;
-    padding-top: 50px;
-}
-
-.contact-content>h1 {
-    font-size: 60px;
-}
-
-.contact-content>p {
-    font-weight: normal;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: none;
-}
-
-.svg-icon {
-    height: 1em;
-    margin-top: -4px;
-    pointer-events: none;
-    vertical-align: middle;
-    width: 1em;
-}
-
-
-/* footer */
-section {
-    height: 100%;
-    min-height: 92vh;
-    padding: 40px 0;
-}
-
-section#footer {
-    min-height: 0vh;
-    padding: 5px;
-}
-
-section#contact {
-    min-height: 0vh;
-    padding-bottom: 0px;
-}
-
-
-#footer {
-    padding-top: 3rem;
-    background: #4d648d !important;
-}
-
-#footer h5 {
-    padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-
-
-ul.social li a i {
-    margin-right: 5px;
-    font-size: 25px;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
-
-    color: #ffffff !important;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-
-ul.social li:hover a i {
-    font-size: 30px;
-    margin-top: -10px;
-}
-
-
-
-@media (max-width:767px) {
-    #footer h5 {
-        padding-left: 0;
-        border-left: transparent;
-        padding-bottom: 0px;
-        margin-bottom: 10px;
+@media only screen and (min-width:768px){
+    .pt-20{
+        padding-top:57vh;
     }
 }
