@@ -39,7 +39,7 @@ $(document).ready(function() {
     $(function() {
         $(window).scroll(function() {
             // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 0.5 * vh) {
+            if ($(this).scrollTop() > 0.7 * vh) {
                 $(".navbar").fadeIn();
             } else {
                 $(".navbar").fadeOut();
