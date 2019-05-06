@@ -26,6 +26,12 @@ nav {
     object-fit: cover;
 }
 
+.img-full-width{
+    width: 100vw;
+    height: 35vh;
+    object-fit: cover;
+}
+
 .img-project {
     width: 400px;
 }
@@ -49,6 +55,7 @@ nav {
     width: 256px;
     object-fit: cover;
 }
+
 
 /* Text styling */
 .bb-white {
