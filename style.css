@@ -10,7 +10,7 @@ section{
 
 /* Navbar */
 nav {
-    min-height: 8vh;
+    height: 8vh;
 }
 
 /* Image */
@@ -24,6 +24,10 @@ nav {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+.img-project{
+    width: 400px;
 }
 
 .parallax {
@@ -61,6 +65,10 @@ a.icon{
 
 a.icon:hover{
     color: #2bbbad;
+}
+
+.f-timmana {
+    font-family: 'Timmana', sans-serif;
 }
 
 /* Chevron animation */
@@ -107,7 +115,7 @@ a.a-home:visited {
 /* Untuk mobile */
 @media only screen and (max-width:768px){
     .pt-20{
-        padding-top:40vh;
+        padding-top:22vh;
     }
     .display-3{
         font-size:4rem;
@@ -121,6 +129,16 @@ a.a-home:visited {
 
 @media only screen and (min-width:768px){
     .pt-20{
-        padding-top:57vh;
+        padding-top:50vh;
     }
+}
+
+.fade-in
+{
+        opacity: 0.4;
+        transition: 0.5s;
+}
+.fade-in:hover
+{
+        opacity:1;
 }

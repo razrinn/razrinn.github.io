@@ -24,7 +24,7 @@ $(".scroll-to-content").click(function(e) {
 var scrollToElement = function(el) {
     $("html,body").animate(
         {
-            scrollTop: $(el).offset().top - 0.08 * vh + 2
+            scrollTop: $(el).offset().top - 0.08 * vh
         },
         2500
     );
