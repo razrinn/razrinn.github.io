@@ -9,6 +9,17 @@ $("li.nav-item").click(function() {
     $(this).addClass("active");
 });
 
+$(".scroll-to-top").click(function(e) {
+    // prevent default action
+    e.preventDefault();
+    $("html,body").animate(
+        {
+            scrollTop: 0
+        },
+        2000
+    );
+});
+
 // Scroll to element
 $(".scroll-to-content").click(function(e) {
     // prevent default action
