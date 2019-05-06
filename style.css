@@ -32,8 +32,18 @@ nav {
     object-fit: cover;
 }
 
+.img-contact{
+    
+}
+
 .img-project {
     width: 400px;
+}
+
+.img-experience {
+    width: 128px;
+    height: 128px;
+    object-fit: scale-down;
 }
 
 .parallax {
@@ -113,6 +123,17 @@ a.a-home:visited {
     -o-animation: arrow-jump 1s infinite;
     /* Opera 12+ */
     animation: arrow-jump 1s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+#arrow-2 {
+    -webkit-animation: arrow-jump 3s infinite;
+    /* Safari 4+ */
+    -moz-animation: arrow-jump 3s infinite;
+    /* Fx 5+ */
+    -o-animation: arrow-jump 3s infinite;
+    /* Opera 12+ */
+    animation: arrow-jump 3s infinite;
     /* IE 10+, Fx 29+ */
 }
 

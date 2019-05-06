@@ -26,7 +26,7 @@ var scrollToElement = function(el) {
         {
             scrollTop: $(el).offset().top - 0.08 * vh + 1
         },
-        2500
+        2000
     );
 };
 
