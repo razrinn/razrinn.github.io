@@ -4,7 +4,7 @@ html {
     overflow-x: hidden;
 }
 
-section{
+section {
     min-height: 70vh;
 }
 
@@ -26,7 +26,7 @@ nav {
     object-fit: cover;
 }
 
-.img-project{
+.img-project {
     width: 400px;
 }
 
@@ -44,27 +44,31 @@ nav {
     background-size: cover;
 }
 
-.img-profile{
+.img-profile {
     height: 256px;
     width: 256px;
     object-fit: cover;
 }
 
 /* Text styling */
-.bb-white{
-    border-bottom: 2px solid white;  
+.bb-white {
+    border-bottom: 2px solid white;
 }
 
-u{
+u {
     width: 2px;
 }
 
-a.icon{
+a.icon {
     color: white;
 }
 
-a.icon:hover{
+a.icon:hover {
     color: #2bbbad;
+}
+
+a>h3 {
+    color: black;
 }
 
 .f-timmana {
@@ -78,7 +82,7 @@ a.a-home:link {
 
 a.a-home:visited {
     color: #ffffff;
-}   
+}
 
 @-webkit-keyframes arrow-jump {
     0% {
@@ -106,39 +110,43 @@ a.a-home:visited {
 }
 
 /* Button */
-.btn{
+.btn {
     border-radius: 25px;
 }
 
 
 /* Misc */
 /* Untuk mobile */
-@media only screen and (max-width:768px){
-    .pt-20{
-        padding-top:22vh;
-    }
-    .display-3{
-        font-size:4rem;
+@media only screen and (max-width:768px) {
+    .pt-20 {
+        padding-top: 22vh;
     }
 
-    .landing-title{
-        font-size:1.2rem;
+    .display-3 {
+        font-size: 4rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .landing-title {
+        font-size: 1.2rem;
 
     }
 }
 
-@media only screen and (min-width:768px){
-    .pt-20{
-        padding-top:50vh;
+@media only screen and (min-width:768px) {
+    .pt-20 {
+        padding-top: 50vh;
     }
-}
 
-.fade-in
-{
+    .fade-in {
         opacity: 0.4;
         transition: 0.5s;
-}
-.fade-in:hover
-{
-        opacity:1;
+    }
+
+    .fade-in:hover {
+        opacity: 1;
+    }
 }
