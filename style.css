@@ -40,7 +40,7 @@ nav {
 }
 
 .img-project {
-    width: 400px;
+    width: 70%;
 }
 
 .img-experience {
@@ -87,8 +87,10 @@ a.icon:hover {
     color: #2bbbad;
 }
 
-a>h3 {
+a>h4 {
     color: black;
+    margin-top: -35px;
+    font-weight: bold;
 }
 
 .f-timmana {

@@ -59,8 +59,8 @@ $(document).ready(function() {
     });
 });
 
-// Disable parallax on mobile
-jarallax(document.querySelectorAll(".jarallax"), {
-    disableParallax: /iPad|iPhone|iPod|Android/,
-    disableVideo: /iPad|iPhone|iPod|Android/
-});
+// // Disable parallax on mobile
+// jarallax(document.querySelectorAll(".jarallax"), {
+//     disableParallax: /iPad|iPhone|iPod|Android/,
+//     disableVideo: /iPad|iPhone|iPod|Android/
+// });

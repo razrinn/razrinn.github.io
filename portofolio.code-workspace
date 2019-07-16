@@ -6,5 +6,8 @@
         {
             "path": "/home/razrinn/code/learn/portofolio"
         }
-    ]
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "razrinn.github.io"
+    }
 }
