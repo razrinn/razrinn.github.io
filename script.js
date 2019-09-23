@@ -16,7 +16,7 @@ $(".scroll-to-top").click(function(e) {
         {
             scrollTop: 0
         },
-        2000
+        500
     );
 });
 
@@ -37,7 +37,7 @@ var scrollToElement = function(el) {
         {
             scrollTop: $(el).offset().top - 0.08 * vh + 1
         },
-        2000
+        500
     );
 };
 
